@@ -78,7 +78,6 @@ public class Costume extends Asset {
             ImageIO.write(img, "png", new File(".cache", hash + ".png"));
             image.create(img);
         } else {
-            System.out.println(url);
             image.create(ImageIO.read(stream));
         }
 
